@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/black" >
+
+<!--    Result View-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Cal_view"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:background="@color/grey"
+            android:gravity="end"
+            android:text="@string/view"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/cal_result"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:background="@color/grey"
+            android:gravity="end"
+            android:text="@string/resultView"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>   <!--Result view End-->
+
+<!--    Space for Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!--    First line of Buttons-->
+         <LinearLayout
+             style="?android:attr/buttonBarStyle"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp">
+
+             <Button
+                 android:id="@+id/btnAC"
+                 style="?android:attr/buttonBarButtonStyle"
+                 android:layout_width="80dp"
+                 android:layout_height="match_parent"
+                 android:padding="10dp"
+                 android:layout_margin="5dp"
+                 android:background="@color/grey"
+                 android:textColor="@color/orange"
+                 android:textSize="20sp"
+                 android:text="@string/clear" />
+
+             <Button
+                 android:id="@+id/btnBack"
+                 style="?android:attr/buttonBarButtonStyle"
+                 android:layout_width="80dp"
+                 android:layout_height="match_parent"
+                 android:padding="10dp"
+                 android:layout_margin="5dp"
+                 android:background="@color/grey"
+                 android:textColor="@color/orange"
+                 android:textSize="15sp"
+                 android:text="@string/back" />
+
+             <Button
+                 android:id="@+id/btnPercent"
+                 style="?android:attr/buttonBarButtonStyle"
+                 android:layout_width="80dp"
+                 android:layout_height="match_parent"
+                 android:padding="10dp"
+                 android:layout_margin="5dp"
+                 android:background="@color/grey"
+                 android:textColor="@color/orange"
+                 android:textSize="20sp"
+                 android:text="@string/percent" />
+
+             <Button
+                 android:id="@+id/btnDivide"
+                 style="?android:attr/buttonBarButtonStyle"
+                 android:layout_width="80dp"
+               android:layout_height="match_parent"
+               android:padding="10dp"
+               android:layout_margin="5dp"
+               android:background="@color/grey"
+               android:textColor="@color/orange"
+               android:textSize="30sp"
+               android:text="@string/div" />
+         </LinearLayout>  <!-- 1st line buttons end -->
+
+             <!--2nd line buttons-->
+             <LinearLayout
+                 style="?android:attr/buttonBarStyle"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp">
+
+                 <Button
+                     android:id="@+id/btn7"
+                     style="?android:attr/buttonBarButtonStyle"
+                     android:layout_width="80dp"
+                     android:layout_height="match_parent"
+                     android:padding="10dp"
+                     android:layout_margin="5dp"
+                     android:background="@color/grey"
+                     android:textColor="@color/white"
+                     android:textSize="20sp"
+                     android:text="@string/seven" />
+
+                 <Button
+                     android:id="@+id/btn8"
+                     style="?android:attr/buttonBarButtonStyle"
+                     android:layout_width="80dp"
+                     android:layout_height="match_parent"
+                     android:padding="10dp"
+                     android:layout_margin="5dp"
+                     android:background="@color/grey"
+                     android:textColor="@color/white"
+                     android:textSize="20sp"
+                     android:text="@string/eight" />
+
+                 <Button
+                     android:id="@+id/btn9"
+                     style="?android:attr/buttonBarButtonStyle"
+                     android:layout_width="80dp"
+                     android:layout_height="match_parent"
+                     android:padding="10dp"
+                     android:layout_margin="5dp"
+                     android:background="@color/grey"
+                     android:textColor="@color/white"
+                     android:textSize="20sp"
+                     android:text="@string/nine" />
+
+                 <Button
+                     android:id="@+id/btnMultiply"
+                     style="?android:attr/buttonBarButtonStyle"
+                     android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/grey"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp"
+                    android:text="@string/multiply" />
+             </LinearLayout>  <!-- 2nd line buttons end -->
+
+                <!--3rd line buttons-->
+                <LinearLayout
+                    style="?android:attr/buttonBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <Button
+                        android:id="@+id/btn4"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/four" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/five" />
+
+                    <Button
+                        android:id="@+id/btn6"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/six" />
+
+                    <Button
+                        android:id="@+id/btnMinus"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey"
+                                android:textColor="@color/orange"
+                                android:textSize="20sp"
+                                android:text="@string/minus" />
+                </LinearLayout>  <!-- 3rd line buttons end -->
+
+        <!-- 4th line buttons-->
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/grey"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="@string/one" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/grey"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="@string/two" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/grey"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="@string/three" />
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/grey"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp"
+                    android:text="@string/plus" />
+            </LinearLayout>  <!-- 4th line buttons end -->
+
+        <!-- 5th line buttons-->
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btndzero"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="@string/double_zero" />
+
+            <Button
+                android:id="@+id/btnZero"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:padding="10dp"
+                android:text="@string/zero3"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/btnDot"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="@string/dot" />
+
+            <Button
+                android:id="@+id/btnAns"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:text="@string/equal" />
+        </LinearLayout>  <!-- 5th line buttons end -->
+
+
+    </LinearLayout>  <!-- space for buttons end -->
+
+</LinearLayout>
